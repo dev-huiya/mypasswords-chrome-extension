@@ -1,0 +1,27 @@
+.mypassword-tooltip-container {
+    position: absolute;
+    z-index: 9999;
+    background-color: #FFF;
+    box-shadow: 0 3px 6px rgba(140,149,159,0.15);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.mypassword-tooltip-container:before {
+    content: "myPasswords에 저장된 비밀번호";
+    display: block;
+    padding: 10px;
+    color: #999;
+
+    background-color: #655cb7;
+    color: #FFF;
+}
+
+.mypassword-tooltip-container .item {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.mypassword-tooltip-container .item:hover {
+    background-color: #eee;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "myPasswords",
+  "description": "안전한 비밀번호 | myPasswords",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "images/hello_extensions.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["content-style.css"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://api-mypassword.huiya.me/"
+  ],
+  "permissions": [
+    "storage"
+  ]
+}

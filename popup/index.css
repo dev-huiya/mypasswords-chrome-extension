@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&display=swap');
+
+:root {
+    --text-color: #333;
+    --text-invert-color: #FFF;
+    --text-lighten-color: #777;
+    --primary-color: #655cb7;
+    --secondary-color: #edebff;
+    --background-primary-color: #FFF;
+    --background-secondary-color: #f4f6f8;
+    --background-third-color: #f6f5ff;
+    --lighten-opacity: 0.85;
+    --blue: #1483ff;
+    --red: #ff4949;
+    --green: #45ccb1;
+    --yellow: #ffc241;
+    --black: #4c4c4c;
+
+    --mobile-size: 1024px;
+
+    --color-shadow-small: 0 1px 0 rgba(27,31,36,0.04);
+    --color-shadow-medium: 0 3px 6px rgba(140,149,159,0.15);
+    --color-shadow-large: 0 8px 24px rgba(140,149,159,0.2);
+    --color-shadow-extra-large: 0 12px 28px rgba(140,149,159,0.3);
+}
+
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    width: 300px;
+    height: 300px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--text-invert-color);
+}
+
+.text-logo {
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    line-height: 60px;
+    padding: 0 15px;
+    font-weight: 600;
+}
+.text-logo:before {
+    content: 'myPasswords';
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    justify-content: center;
+    height: calc(100% - 60px);
+}
+
+input {
+    padding: 15px 10px;
+    border: none;
+    background-color: var(--background-secondary-color);
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 10px;
+    border: none;
+    background-color: var(--background-secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[color=primary] {
+    background-color: var(--primary-color);
+    color: var(--text-invert-color);
+}
