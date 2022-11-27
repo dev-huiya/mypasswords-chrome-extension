@@ -25,3 +25,8 @@
 .mypassword-tooltip-container .item:hover {
     background-color: #eee;
 }
+
+.mypassword-tooltip-container .data-empty {
+    padding: 10px;
+    color: #999;
+}
